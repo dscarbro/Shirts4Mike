@@ -1,3 +1,9 @@
+/* Desktop */
+@import url("desktop.css") only screen and (min-width:769px);
+/* Tablet */
+@import url("tablet.css") only screen and (min-width:481px) and (max-width:768px);
+/* Phone */
+@import url("mobile.css") only screen and (max-width:480px);
 /*! normalize.css - http://github.com/necolas/normalize.css */
 
 /* ==========================================================================
@@ -170,7 +176,7 @@ strong {
 }
 
 blockquote {
-    margin: 1em 40px;
+	margin: 1em 40%;
 }
 
 /*
@@ -282,7 +288,7 @@ ul {
 }
 
 dd {
-    margin: 0 0 0 40px;
+    margin: 0 0 0 40%;
 }
 
 /*
@@ -316,8 +322,9 @@ nav ol {
  */
 
 img {
-    border: 0; /* 1 */
-    -ms-interpolation-mode: bicubic; /* 2 */
+	border: 0; /* 1 */
+	-ms-interpolation-mode: bicubic; /* 2 */
+	width: auto;
 }
 
 /*
