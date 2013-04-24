@@ -1,15 +1,38 @@
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width">
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]--><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Unique T-shirts designed by a frog</title>
-	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,700" type="text/css">
-	<link rel="shortcut icon" href="favicon.ico">
+
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,700" type="text/css">
+<link rel="shortcut icon" href="favicon.ico">
+
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="css/fluid-grid.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
 </head>
 <body>
-
-	<div class="header">
+<div class="gridContainer clearfix">
+<div class="header">
 
 		<div class="wrapper">
 
@@ -45,8 +68,11 @@
 
 				<h2>Mike&rsquo;s Latest Shirts</h2>
 
-								<ul class="products">
-					<li><a href="shirt108.html"><img src="img/shirts/shirt-108.jpg" alt="Mike the Frog Shirt, Orange"><p>View Details</p></a></li><li><a href="shirt107.html"><img src="img/shirts/shirt-107.jpg" alt="Logo Shirt, Teal"><p>View Details</p></a></li><li><a href="shirt106.html"><img src="img/shirts/shirt-106.jpg" alt="Logo Shirt, Gray"><p>View Details</p></a></li><li><a href="shirt105.html"><img src="img/shirts/shirt-105.jpg" alt="Mike the Frog Shirt, Yellow"><p>View Details</p></a></li>								
+						<ul class="products fluidList">
+<li><a href="shirt108.html"><img src="img/shirts/shirt-108.jpg" alt="Mike the Frog Shirt, Orange"><p>View Details</p></a></li>
+<li><a href="shirt107.html"><img src="img/shirts/shirt-107.jpg" alt="Logo Shirt, Teal"><p>View Details</p></a></li>
+<li><a href="shirt106.html"><img src="img/shirts/shirt-106.jpg" alt="Logo Shirt, Gray"><p>View Details</p></a></li>
+<li><a href="shirt105.html"><img src="img/shirts/shirt-105.jpg" alt="Mike the Frog Shirt, Yellow"><p>View Details</p></a></li>								
 				</ul>
 
 			</div>
@@ -65,6 +91,6 @@
 		</div>
 	
 	</div>
-
+</div>
 </body>
 </html>
